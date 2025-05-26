@@ -1,48 +1,76 @@
-# Customer Churn Prediction Project
+# 📉 Customer Churn Prediction Project
 
-## Project Overview
-End-to-end data science project predicting customer churn for a telecom company.
+## 🚀 Project Overview
 
-## Project Structure
+This is an end-to-end data science project focused on predicting customer churn for a telecom company. It includes data cleaning, feature engineering, model training, evaluation, monitoring, and visualization dashboards using FastAPI and Streamlit.
+
+---
+
+## 🗂️ Project Structure
+
+```
 customer_churn_prediction/
-├── data/ # Data files
-│ ├── raw/ # Raw data (ignored by git)
-│ └── processed/ # Processed data (ignored by git)
-├── models/ # Trained models (ignored by git)
-├── monitoring/ # Monitoring logs and reports
-├── notebooks/ # Jupyter notebooks for exploration
-├── reports/ # Generated analysis reports
-│ └── figures/ # Visualization images
-├── src/ # Source code
-│ ├── app.py # FastAPI application
-│ ├── dashboard.py # Streamlit dashboard
-│ ├── monitoring.py # Model monitoring
-│ └── run_monitoring.py # Monitoring script
-├── .gitignore
-├── README.md
-└── requirements.txt
+├── data/                  # Data files
+│   ├── raw/               # Raw data (ignored by git)
+│   └── processed/         # Processed/cleaned data (ignored by git)
+├── models/                # Trained model artifacts (ignored by git)
+├── monitoring/            # Monitoring logs and drift reports
+├── notebooks/             # Jupyter notebooks for EDA and experimentation
+├── reports/               # Analysis reports
+│   └── figures/           # Plots and visualizations
+├── src/                   # Source code
+│   ├── app.py             # FastAPI backend for predictions
+│   ├── dashboard.py       # Streamlit dashboard
+│   ├── monitoring.py      # Model monitoring utilities
+│   └── run_monitoring.py  # Script to run monitoring checks
+├── .gitignore             # Files/folders to ignore in version control
+├── README.md              # Project documentation
+└── requirements.txt       # Python dependencies
+```
 
-## Installation
-1. Clone the repository:
+---
+
+## ⚙️ Installation
+
+1. **Clone the repository**
+
 ```bash
-git clone https://github.com/yourusername/customer-churn-prediction.git
+git clone https://github.com/timothykimutai/customer-churn-prediction.git
 cd customer-churn-prediction
+```
 
-Create and activate virtual environment:
+2. **Create and activate a virtual environment**
+
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate        # On Windows: venv\Scripts\activate
+```
 
-Install dependencies:
+3. **Install dependencies**
+
+```bash
 pip install -r requirements.txt
+```
 
-Usage
-Run the FastAPI server:
+---
 
+## 🚦 Usage
+
+### ▶️ Run the FastAPI server
+
+```bash
 uvicorn src.app:app --reload
+```
 
-Run the Streamlit dashboard:
+### 📊 Launch the Streamlit dashboard
+
+```bash
 streamlit run src/dashboard.py
+```
 
-Run monitoring:
+### 📉 Execute the monitoring script
+
+```bash
 python src/run_monitoring.py
+```
 
