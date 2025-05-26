@@ -1,0 +1,18 @@
+Model Performance Monitoring Report
+Generated at: 2025-05-27 00:48:34.152534
+
+Reference Metrics:
+- F1-score: 0.687
+- ROC-AUC: 0.889
+- Sample size: 7043
+
+Performance History Summary:
+       f1_score   roc_auc  sample_size
+count  2.000000  2.000000     2.000000
+mean   0.687233  0.883410   754.500000
+std    0.000941  0.010490   925.602777
+min    0.686567  0.875992   100.000000
+25%    0.686900  0.879701   427.250000
+50%    0.687233  0.883410   754.500000
+75%    0.687565  0.887119  1081.750000
+max    0.687898  0.890828  1409.000000
