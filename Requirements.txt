@@ -9,6 +9,7 @@ packaging
 pandas
 pillow
 pyparsing
+pytest
 python-dateutil
 pytz
 scikit-learn
